@@ -35,7 +35,6 @@ class ApiResponse {
 
         /*
             Success message for client/frontend.
-
             Example:
             "Login successful"
             "User fetched successfully"
@@ -44,7 +43,6 @@ class ApiResponse {
 
         /*
             Actual response payload.
-
             Can contain:
             - user object
             - array of videos
