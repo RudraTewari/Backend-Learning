@@ -16,7 +16,7 @@ app.use(express.json())
 // req.body from:
 // { "email": "test@gmail.com" }
 
-app.use(express.urlencoded())  //while searching there are spaces between search so this encodes those speacial characters
+app.use(express.urlencoded())  //while searching there are spaces between search so this encodes those special characters
 // Parses form data / URL-encoded data.
 // Example form submission:
 // name=Rudra&age=20
@@ -35,5 +35,13 @@ app.use(cookieParser())  // This is used to access and set cookies of user from 
 // Makes cookies available as:
 // req.cookies.accessToken
 // Also helps in auth flows using refresh/access tokens.
+
+
+//import routes
+import userRouter from './routes/user.routes.js'
+
+//routes declaration
+app.use("/api/v1/users",userRouter)
+//http://localhost:8000/api/v1/users/register
 
 export {app}

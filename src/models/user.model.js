@@ -29,7 +29,6 @@ const userSchema = new Schema({
     },
     coverImage:{
         type : String,
-
     },
     watchHistory:[
         {
